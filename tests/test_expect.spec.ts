@@ -13,7 +13,7 @@ const {test, expect}= require('@playwright/test')
 //await before a function makes the functon wait for a promoise 
     //since we want our first line execute completely before jumping to next line , so await is used 
 test('visiting google site',async({page})=>{ 
-    await page.goto('https://google.com')
+    await page.goto('https://dev.keela.co')
     await expect(page).toHaveTitle('Google');
 })
 

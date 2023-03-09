@@ -7,5 +7,20 @@ npx playwright test --debug                     debug mode
 npx playwright test: line_number --debug        debug specific test line 
 
 
+npx playwright codegen                          to run codegen 
+npx playwright codegen  --help 
+npx playwright codegen --browser firefox        to run specific browser
+npx playwright codegen --target programming_language -0 .\location  to directly stored the code in file 
 
+
+await page.pause()                              pasue the screen to observe the test result 
+
+
+-------------------------Selectors------------------------------------------------------        
+            using any object property 
+await page.click('id=user_name')
+await page.locator('[id="user_name']')
+            using csss selector 
+>> go to object >inspect >right clcick and copy 
+await page.click('#login-button')
 

@@ -1,6 +1,7 @@
 import { chromium } from "@playwright/test";
 import { test, expect } from '@playwright/test';
-
+ 
+test.describe("launching browser",()=>{
 test('visiting google page',async()=>{
 
     const browser=await chromium.launch();
@@ -9,3 +10,4 @@ test('visiting google page',async()=>{
     page.goto("https://www.google.com/");
     await browser.close();
     })
+})

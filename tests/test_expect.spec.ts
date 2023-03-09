@@ -14,7 +14,6 @@ const {test, expect}= require('@playwright/test')
     //since we want our first line execute completely before jumping to next line , so await is used 
 test('visiting google site',async({page})=>{ 
     await page.goto('https://google.com')
-    await expect(page).toHaveTitle('Google')
-
+    await expect(page).toHaveTitle('Google');
 })
 

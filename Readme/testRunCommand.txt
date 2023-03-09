@@ -1,0 +1,11 @@
+npx playwright test --workers 3                 runs with 3 workers in parallel
+npx playwright test file1.ts file2.ts           running multiple files 
+npx playwright test -g "test title"             run only the specific test 
+npx playwright test --project=chromium          run only in the chromium browser
+npx playwright test --headed                    run in headed mode 
+npx playwright test --debug                     debug mode 
+npx playwright test: line_number --debug        debug specific test line 
+
+
+
+
